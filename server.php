@@ -91,7 +91,7 @@ if (isset($_POST['login_btn'])) {
   if (empty($password)) {
   	array_push($errors, "Password is required");
   }
-  if($username=="benson" and $password=="benson" or $username=="stephen" and $password=="stephen"){
+  if($username=="brian" and $password=="brian" or $username=="emmanuel" and $password=="emmanuel"){
     $_SESSION['no_of_values']=0;
     $_SESSION['limit_number']=5;
     header('location: adminDashboard.php');
