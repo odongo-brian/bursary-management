@@ -40,7 +40,7 @@ session_start();
             <?php echo "Welcome ". "<strong style='color:green;'>".$_SESSION['firstname']." ".$_SESSION['lastname']."</strong>  <br>";  ?>
                 <h1 class="display-4">SiRISIA CONSTITUENCY BURSARY MANAGEMENT</h1>
                 
-                <p class="lead">The Sirisia constituency bursary management is meant to give the students who are residents of siria constituency </p>
+                <p class="lead">The Sirisi constituency bursary management is meant to give the students who are residents of siria constituency </p>
                 <p class="lead"></p>
                  <a class="btn btn-primary btn-lg" href="application.php" role="button">Apply</a>
                 </p>
