@@ -9,8 +9,8 @@ $regno = $_SESSION['username'];
 
 
    $today=Date('jS F, Y');
-//    $conn=mysqli_connect("localhost","benson","benson","e-bursary") or die(mysqli_error($conn));
-//    $conn=mysqli_connect("localhost","blinxcok_benson","Katumo@4211","blinxcok_e-bursary") or die(mysqli_error($conn));
+//    $conn=mysqli_connect("localhost","brian","brian","e-bursary") or die(mysqli_error($conn));
+//    $conn=mysqli_connect("localhost","emmanuel","wanyonyi","blinxcok_e-bursary") or die(mysqli_error($conn));
 
     
 $strSQL= "SELECT * from loanDetails where regNumber='$regno' ";
@@ -32,11 +32,12 @@ class PDF extends FPDF
 
 function Header()
 {
-    $this->Image('logo.png', 88,6,30);
+    //$this->Image('logo.png', 88,6,30);
+    //$this->Image('sirisia.png', 88,6,30);
     $this->Ln(35);
 	
     $this->SetFont('Arial','',15);
-	$this->Cell(0,6,'MASENO UNIVERSITY',0,1,'C');
+	$this->Cell(0,6,'SIRISIA CONSTITUENCY',0,1,'C');
 	$this->Ln(8);
 	//$this->SetX(140);
     $this->SetFont('Arial','B',10);
@@ -56,7 +57,7 @@ function Footer()
 {
   $this->SetY(-15);
   $this->SetFont('Arial', 'I', 8);
-  $this->Cell(0, 10, 'Maseno University  ', 0, 0, 'C');
+  $this->Cell(0, 10, 'Sirisia Constituency  ', 0, 0, 'C');
   $this->Cell(0,10,'Page '.$this->PageNo().'/{nb}',0,0,'C');
 }
 

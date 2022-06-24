@@ -40,8 +40,9 @@ session_start();
             <?php echo "Welcome ". "<strong style='color:green;'>".$_SESSION['firstname']." ".$_SESSION['lastname']."</strong>  <br>";  ?>
                 <h1 class="display-4">SiRISIA CONSTITUENCY BURSARY MANAGEMENT</h1>
                 
-                <p class="lead">The Sirisi constituency bursary management is meant to give the students who are residents of siria constituency </p>
-                <p class="lead"></p>
+                <p class="lead">The Sirisia constituency bursary management is meant to give the students who are residents of sirisia constituency. 
+                  They all have equal opportunies of benefitin from the bursary </p>
+                <p class="lead">As long as you are a resident within the constituency, you are highly encouraged to Apply</p>
                  <a class="btn btn-primary btn-lg" href="application.php" role="button">Apply</a>
                 </p>
               </div>
@@ -70,9 +71,9 @@ session_start();
       <div class="col">
        <h3>Social Media</h3>
        <p>Follow us on social media through</p>
-       <a class="fa fa-twitter fa-2x" href="https://twitter.com/maseno_uni" target="_blank"></a>
-       <a class="fa fa-facebook fa-2x" href="https://facebook.com/MasenoUniversity" target="_blank"></a>
-       <a class="fa fa-instagram fa-2x" href="https://instagram.com/maseno_university_" target="_blank"></a>
+       <a class="fa fa-twitter fa-2x" href="https://twitter.com/sirisia" target="_blank"></a>
+       <a class="fa fa-facebook fa-2x" href="https://facebook.com/sirisia" target="_blank"></a>
+       <a class="fa fa-instagram fa-2x" href="https://instagram.com/sirisia" target="_blank"></a>
       </div>
     </div>
     

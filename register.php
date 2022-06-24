@@ -29,7 +29,7 @@
 
             <div class="formTop">
                 <h3 class="formHeading">E-Bursary Register Form</h3>
-                <img src="static/images/masenoLogo.png" class="masenoLogoImage">
+                <img src="static/images/sirisia.png" class="masenoLogoImage">
             </div>
 
             <div class="registerFormContent">
@@ -67,7 +67,7 @@
         </div>
 <footer translate="no">
 <div class="registerForm-footer">
-  <p class="copyright register-footer-p" style="text-align: center;">Maseno University &copy;<span id="currentYear">2021</span></p>
+  <p class="copyright register-footer-p" style="text-align: center;">Sirisia constituency &copy;<span id="currentYear">2022</span></p>
 </div>
 </footer>
 

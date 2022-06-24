@@ -20,7 +20,7 @@
 
             <div class="formTop">
                 <h3 class="formHeading">E-Bursary Login</h3>
-                <img src="static/images/masenoLogo.png" class="masenoLogoImage">
+                <img src="static/images/sirisia.png" class="masenoLogoImage">
             </div>
 
             <div class="formContent">

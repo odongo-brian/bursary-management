@@ -94,9 +94,9 @@ echo $regno;
         <div class="col">
          <h3>Social Media</h3>
          <p>Follow us on social media through</p>
-         <a class="fa fa-twitter fa-2x" href="https://twitter.com/maseno_uni" target="_blank"></a>
-         <a class="fa fa-facebook fa-2x" href="https://facebook.com/MasenoUniversity" target="_blank"></a>
-         <a class="fa fa-instagram fa-2x" href="https://instagram.com/maseno_university_" target="_blank"></a>
+         <a class="fa fa-twitter fa-2x" href="https://twitter.com/sirisia" target="_blank"></a>
+         <a class="fa fa-facebook fa-2x" href="https://facebook.com/sirisia" target="_blank"></a>
+         <a class="fa fa-instagram fa-2x" href="https://instagram.com/sirisia" target="_blank"></a>
         </div>
       </div>
       

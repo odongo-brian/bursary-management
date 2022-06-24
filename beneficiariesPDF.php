@@ -4,7 +4,7 @@ ob_start();
 require('server.php');
     
    $today=Date('jS F, Y');
-  //  $conn=mysqli_connect("localhost","blinxcok_benson","Katumo@4211","blinxcok_e-bursary") or die(mysqli_error($conn));
+ 
 
     
 $strSQL= "SELECT regNumber,applicationStatus,amountAllocated,chequeNumber,paymentStatus,date_processed from loanDetails where applicationStatus='verified' ";
@@ -30,11 +30,11 @@ class PDF extends FPDF
 
 function Header()
 {
-    $this->Image('logo.png', 88,6,30);
+    $this->Image('C:\xampp\htdocs\e-bursary-main\images\sirisia.jpg', 88,6,30);
     $this->Ln(35);
 	
     $this->SetFont('Arial','',15);
-	$this->Cell(0,6,'MASENO UNIVERSITY',0,1,'C');
+	$this->Cell(0,6,'SIRISIA CONSTITUENCY',0,1,'C');
 	$this->Ln(8);
 	//$this->SetX(140);
     $this->SetFont('Arial','B',10);
@@ -54,7 +54,7 @@ function Footer()
 {
   $this->SetY(-15);
   $this->SetFont('Arial', 'I', 8);
-  $this->Cell(0, 10, 'Maseno University  ', 0, 0, 'C');
+  $this->Cell(0, 10, 'Sirisia Constituency  ', 0, 0, 'C');
   $this->Cell(0,10,'Page '.$this->PageNo().'/{nb}',0,0,'C');
 }
 

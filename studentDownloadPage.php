@@ -93,7 +93,7 @@ include 'server.php';
     </div>
     
   </div>
-  <p class="copyright" style="text-align: center;">Maseno University &copy;<span id="currentYear">2021</span></p>
+  <p class="copyright" style="text-align: center;">Maseno University &copy;<span id="currentYear">2022</span></p>
 </footer>
 <!--end footer-->
 

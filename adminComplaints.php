@@ -98,34 +98,35 @@ include 'server.php';
           </table>
         
  <!--Footer section-->
- <footer translate="no" class="footer-section">
+<footer translate="no" class="footer-section">
     <div class="container">
       <div class="row">
         <div class="col">
           
-            <h4 class="footer-menu">MENU </h4>
-            <a href="adminDashboard.php" class="footer-menu">Home</a>
-            <a class="footer-menu" href="disbursement.php">Disbursment</a>
-            <a class="footer-menu" href="adminComplaints.php">Complaints</a>
-            <a href="adminDownloadPage.php" class="footer-menu">Downloads</a>
+            <h4 class="footer-menu">MENU</h4>
+            <a href="studentDashboard.php" class="footer-menu">Home</a>
+            <a href="application.php" class="footer-menu">Application</a>
+            <a href="loanStatus.php" class="footer-menu">Loan Status</a>
+            <a href="studentComplaints.php" class="footer-menu">Complaints</a>
+            <a href="studentDownloadPage.php" class="footer-menu">Downloads</a>
         </div>
         <div class="col-6">
-          <h4 class="footer-heading">MASENO UNIVERSITY</h4>
-          <p>Maseno University is a public university based in the Maseno district of the city of Kisumu, Kenya, 
-            situated along the Equator. It was fully  fledged as a university in 2001, after being a constituent 
-            college of Moi University for a decade. It is one of public universities in Kenya.</p>
+          <h4 class="footer-heading">SIRISIA CONSTITUENCY BURSARY MANAGEMENT</h4>
+          <p>Sirisia contituency is offering bursaries to all university students of its contituency. 
+            It involves a fair process of which every applicant is meant to benefit unless false 
+            documents are attached during the application process </p>
         </div>
         <div class="col">
          <h3>Social Media</h3>
-         <p>Maseno University social media handles include:</p>
-         <a class="fa fa-twitter fa-2x" href="https://twitter.com/maseno_uni" target="_blank"></a>
-         <a class="fa fa-facebook fa-2x" href="https://facebook.com/MasenoUniversity" target="_blank"></a>
-         <a class="fa fa-instagram fa-2x" href="https://instagram.com/maseno_university_" target="_blank"></a>
+         <p>Follow us on social media through:</p>
+         <a class="fa fa-twitter fa-2x" href="https://twitter.com/sirisia" target="_blank"></a>
+         <a class="fa fa-facebook fa-2x" href="https://facebook.com/sirisia" target="_blank"></a>
+         <a class="fa fa-instagram fa-2x" href="https://instagram.com/sirisia" target="_blank"></a>
         </div>
       </div>
       
     </div>
-    <p class="copyright" style="text-align: center;">Maseno University &copy;<span id="currentYear">2021</span></p>
+    <p class="copyright" style="text-align: center;">Sirisia Constituency &copy;<span id="currentYear">2022</span></p>
   </footer>
   <!--end footer-->
 

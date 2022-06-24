@@ -4,7 +4,14 @@ session_start();
 // ini_set('display_errors', '1');
 // ini_set('display_startup_errors', '1');
 // error_reporting(E_ALL);
-
+define('DEBUG', true);
+error_reporting(E_ALL);
+if(DEBUG){
+  ini_set('display_errors', 'on');
+}
+{
+  ini_set('display_errors', 'off');
+}
 // connect to the database
 try{
    $db = mysqli_connect('localhost', 'root', '', 'e-bursary');
@@ -258,7 +265,7 @@ if (isset($_POST['submit_application_btn'])) { // if save button on the form is 
 
   if (!in_array($extension1 or $extension2 or $extension3, ['pdf']) ) {
       echo "You file extension must be .pdf";
-  } else if ($_FILES ['loanattachment']['size'] > 1000000 or ['bursaryattachment'] ['size'] > 1000000 or ['gradeattachment'] ['size'] > 1000000)  { // file shouldn't be larger than 1Megabyte
+  } else if ($_FILES ['loanattachment']['size'] > 4000000 or ['bursaryattachment'] ['size'] > 4000000 or ['gradeattachment'] ['size'] > 4000000)  { // file shouldn't be larger than 4Megabyte
       echo "File too large!";
   } else {
       // move the uploaded (temporary) file to the specified destination
@@ -283,7 +290,19 @@ $query = "INSERT INTO `personal_information`
  '$loanAwardingOrg','$filename1','$bursaryAmount','$bursaryAwardingOrg','$filename2','$academicGrade','$filename3')";
 
 
-  mysqli_query($db, $query);
+  $info = mysqli_query($db, $query);
+  if($info){
+    echo "
+    <script>alert'Successful Application';</script>
+    ";
+  }
+  else{
+    
+    echo "
+    <script>alert'application Failed. Try Again Later';</script>
+    ";
+  }
+
 
     }else {
           echo "Failed to move academic attachment";
