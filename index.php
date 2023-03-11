@@ -8,17 +8,7 @@
 
 <html lang="en">
     <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>E-BURSARY | LOGIN</title>
-        <link rel="stylesheet" href="static/css/style.css">
-        <link rel="stylesheet" href="static/bootstrap4/css/bootstrap.min.css">
-        <link rel="icon" type="image/webp" sizes="308x303" href="static/images/logo.png">
-    </head>
-    <body class="body">
-        <!--start of login form container-->
-        <div class="loginForm">
-
-            <div class="formTop">
+    <meta name="viewport" content="width=device-git remote add origin https://github.com/dorineokowo/e-bursary.git
                 <h3 class="formHeading">E-Bursary Login</h3>
                 <img src="static/images/sirisia.png" class="masenoLogoImage">
             </div>

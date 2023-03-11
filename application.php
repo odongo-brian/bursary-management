@@ -20,6 +20,7 @@ include 'server.php';
 <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script defer src="https://kit.fontawesome.com/885a196d5c.js" crossorigin="anonymous"></script>
         <!-- <script defer src="static/js/index.js"></script> --> 
+        <script src="form_validation.js"></script>
     </head>
     <body class="body">
         <div class="SOMU-Form">
@@ -67,32 +68,32 @@ include 'server.php';
   ?>
 
             <div class="formContents">
-                <form  class="personalInformationForm" id="SOMUForm" method="POST" action="server.php" enctype="multipart/form-data" >
+                <form  class="personalInformationForm" id="SOMUForm" method="POST" name="form1" action="server.php" enctype="multipart/form-data" >
                 <?php include('errors.php'); ?>
              <?php   
              echo "Hello " .$_SESSION['firstname']." ".$_SESSION['lastname'].".Please apply here!!!";
              ?>
                     <h5 class="SOMU-Subtitle">PERSONAL INFORMATION</h5>
                     <label for="FirstName">First Name</label>
-                    <input name="firstName" type="text" placeholder="First Name" class="SOMU-FirstName" value="<?php  echo $firstName ?>"readonly/><br>
+                    <input name="firstName" type="text" placeholder="First Name" id="fname" class="SOMU-FirstName" value="<?php  echo $firstName ?>"readonly/><br>
 
                     <label for="LastName">Last Name</label>
-                    <input  name="lastname"type="text" placeholder="Last Name" class="SOMU-LastName" value="<?php echo $_SESSION['lastname'] ?>"readonly ><br>
+                    <input  name="lastname"type="text" placeholder="Last Name" id="lname" class="SOMU-LastName" value="<?php echo $_SESSION['lastname'] ?>"readonly ><br>
 
                     <label for="phonenumber">Phone Number</label>
                     <input  name="phonenumber" type="tel" placeholder="Phone Number" class="SOMU-phonenumber" value="<?php echo $_SESSION['phonenumber'] ?>"readonly  /><br>
 
                     <label for="emailaddress">Email Address</label>
-                    <input  name="emailaddress" type="email" placeholder="Email Address" class="SOMU-email" value="<?php echo $_SESSION['emailaddress']  ?>"readonly   ><br>
+                    <input  name="emailaddress" type="email" id="email" placeholder="Email Address" class="SOMU-email" value="<?php echo $_SESSION['emailaddress']  ?>"readonly   ><br>
 
                     <label for="YearOfStudy">Year of Study</label>
-                    <input  name="yearOfStudy" type="text" placeholder="Year of Study" class="SOMU-yearofstudy" required ><br>
+                    <input  name="yearOfStudy" type="number" placeholder="Year of Study" class="SOMU-yearofstudy" min="1" max="7" maxlength="1" required ><br>
 
                     <label for="degree-programme">Degree Programme</label>
                     <input  name="programme" type="text" placeholder="Degree Programme" class="SOMU-Degree-Programme" required ><br>
 
                     <label for="department">Department</label>
-                    <input  name="department" type="text" placeholder="Department" class="SOMU-Department" required><br>
+                    <input  name="department" type="text" placeholder="Department" class="SOMU-Department" onclick="allLetter(document.form1.department)" required><br>
 
                     <label for="county">County</label>
                     <input  name="county" type="text" placeholder="County" class="SOMU-county" required ><br>
@@ -166,7 +167,7 @@ include 'server.php';
                     <label for="attach-evidence">Attach certified result slip by Dean of school(pdf only)</label>
                     <input name="gradeattachment" type="file" accept="application/pdf" placeholder="Attach Document"  required><br><br>
                    <div class="app-submit-btn-div">
-                    <button name="submit_application_btn" class="btn btn-primary loan-details-btn-save" type="submit">Submit Application</button>
+                    <button name="submit_application_btn" class="btn btn-primary loan-details-btn-save" type="submit" >Submit Application</button>
                   </div>
                   </div>
                        </form>

@@ -81,6 +81,7 @@ if (isset($_POST['register_btn'])) {
 
    
     $_SESSION['success'] = "Successifully Registered";
+    echo $_SESSION['success'] ;
     header('location: index.php');
     }
 }
@@ -217,6 +218,7 @@ $user = mysqli_fetch_assoc($result);
 if ($user) { // if user exists
   if ($user['regNumber'] === $regno) {
     array_push($errors, "You have already submitted your application");
+    
   }
 }
 // Finally, register user if there are no errors in the form
@@ -292,15 +294,11 @@ $query = "INSERT INTO `personal_information`
 
   $info = mysqli_query($db, $query);
   if($info){
-    echo "
-    <script>alert'Successful Application';</script>
-    ";
+    echo "Application Successful";
   }
   else{
     
-    echo "
-    <script>alert'application Failed. Try Again Later';</script>
-    ";
+    echo "Application Not successful!!!";
   }
 
 
